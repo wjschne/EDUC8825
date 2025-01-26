@@ -1,0 +1,77 @@
+---
+title: "Data Wrangling Exercise"
+author: "Your Name Here"
+output: html
+---
+
+This is an Quarto document. It mixes text and code. It is great for annotating your analyses. It also creates beautiful documents in .html, .pdf, Word, and much more.
+
+Below is the setup chunk. It runs, but nothing is "included" in your document. It is a good place to load packages and do other preliminary tasks.  
+
+**Add the code that will load the `tidyverse` package.** 
+
+```{r setup}
+#| include: false
+# Add the code to load the tidyverse package:
+
+
+```
+
+The data we will use is at this web URL:
+
+https://github.com/wjschne/EDUC5529/raw/master/happiness.csv
+
+Imagine that an intervention to increase happiness via counseling is given to 10 clients using a multiple baseline design just like in the tutorial.
+
+Import the data into a variable called `d`:
+
+```{r import}
+
+```
+
+
+View the data:
+
+```{r view}
+
+```
+
+
+Filter to show only the row for the person for `id == 9`:
+
+```{r filter9}
+
+```
+
+
+Select just variables for sessions 10 through 20:
+
+```{r select20}
+
+```
+
+
+Restructure the data to make it longer and assign the long format to a variable called `d_longer`. Note that there are 100 sessions, not 60 like in the example.
+
+```{r restructure}
+
+```
+
+
+Mutate the data to create a `phase` variable like in the tutorial's example:
+
+```{r phase}
+
+```
+
+
+Now plot the data:
+
+```{r plot}
+
+```
+
+
+
+
+
